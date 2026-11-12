@@ -6,7 +6,7 @@ class Solution {
         Set<Integer> seen = new HashSet<>();
 
         for (int num : nums) {
-            // add() returns false if the element is already in the set
+
             if (!seen.add(num)) {
                 return true;
             }

@@ -6,7 +6,7 @@ class Solution {
         int candidate1 = 0, candidate2 = 0;
         int count1 = 0, count2 = 0;
 
-        // First pass: Find up to two potential majority candidates
+       
         for (int num : nums) {
             if (num == candidate1) {
                 count1++;
@@ -24,7 +24,7 @@ class Solution {
             }
         }
 
-        // Second pass: Verify the actual frequencies of the candidates
+        
         count1 = 0;
         count2 = 0;
         for (int num : nums) {

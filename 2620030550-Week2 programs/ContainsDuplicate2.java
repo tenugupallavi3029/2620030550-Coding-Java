@@ -6,12 +6,12 @@ class Solution {
         Set<Integer> window = new HashSet<>();
 
         for (int i = 0; i < nums.length; i++) {
-            // Remove the element that falls outside the window of size k
+            
             if (i > k) {
                 window.remove(nums[i - k - 1]);
             }
 
-            // If add() returns false, a duplicate exists within distance k
+            
             if (!window.add(nums[i])) {
                 return true;
             }
